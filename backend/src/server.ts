@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import mongoose from "mongoose";
 import { env } from "./config/env";
@@ -8,7 +9,19 @@ import { seedTeam } from "./config/seedTeam";
 import { apiRouter } from "./routes/apiRoutes";
 
 const app = express();
-const staticRoot = resolve(__dirname, "../..");
+
+// When running dist/server.js: __dirname is backend/dist.
+// When running src/server.ts via tsx: __dirname is backend/src.
+// Prefer the directory containing the repository frontend, but keep a safe
+// fallback for repository layouts that differ during deployment.
+const staticCandidates = [
+  resolve(__dirname, "../.."),
+  resolve(process.cwd(), ".."),
+  resolve(process.cwd()),
+];
+const staticRoot = staticCandidates.find((candidate) =>
+  existsSync(resolve(candidate, "index.html")),
+) ?? resolve(__dirname, "../..");
 
 app.use(cors());
 app.use(express.json());
@@ -38,8 +51,9 @@ app.get("*", (_request, response) => {
 async function startServer(): Promise<void> {
   await connectDB();
   await seedTeam();
-  app.listen(env.PORT, () => {
-    console.log(`Server listening on http://localhost:${env.PORT}`);
+  const port = Number(process.env.PORT) || env.PORT || 5000;
+  app.listen(port, "0.0.0.0", () => {
+    console.log(`Server listening on http://0.0.0.0:${port}`);
   });
 }
 
