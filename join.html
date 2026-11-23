@@ -1,539 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
+    <title>Join AIJAMII SAFARI</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./aijamii.css" />
+    <link rel="stylesheet" href="join.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<title>
-Join AIJAMII SAFARI
-</title>
-
-
-<link rel="stylesheet" href="./aijamii.css">
-<link rel="stylesheet" href="join.css">
-
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-</head>
-
-
-
-<body>
-
-
-
-<!--==================================================
+  <body>
+    <!--==================================================
 AIJAMII SAFARI HEADER
 ==================================================-->
 
-<header class="ai-header">
-
-
-    <nav class="ai-navbar">
-
-
+    <header class="ai-header">
+      <nav class="ai-navbar">
         <!-- LOGO -->
 
         <a href="aijamii.html" class="ai-logo">
+          <h2>
+            AIJAMII
 
+            <span>SAFARI</span>
+          </h2>
 
-            <h2>
-
-                AIJAMII
-
-                <span>SAFARI</span>
-
-            </h2>
-
-
-            <small>
-
-                AI + Community Impact
-
-            </small>
-
-
+          <small> AI + Community Impact </small>
         </a>
-
-
-
-
 
         <!-- NAVIGATION -->
 
         <ul class="ai-nav-links">
+          <li>
+            <a href="#discover"> Discover </a>
+          </li>
 
+          <li>
+            <a href="#initiatives"> Initiatives </a>
+          </li>
 
-            <li>
-
-                <a href="#discover">
-
-                    Discover
-
-                </a>
-
-            </li>
-
-
-
-            <li>
-
-                <a href="#initiatives">
-
-                    Initiatives
-
-                </a>
-
-            </li>
-
-
-
-            <li>
-
-                <a href="#community">
-
-                    Community
-
-                </a>
-
-            </li>
-
-
+          <li>
+            <a href="#community"> Community </a>
+          </li>
         </ul>
-
-
-
-
 
         <!-- JOIN BUTTON -->
 
-        <a href="./join.html" class="ai-join-btn">
-
-            Join Movement
-
-        </a>
-
-
-
-
+        <a href="./join.html" class="ai-join-btn"> Join Movement </a>
 
         <!-- MOBILE MENU -->
 
         <div class="ai-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
 
-            <i class="fa-solid fa-bars"></i>
+    <!-- JOIN HERO -->
 
+    <section class="join-page-hero">
+      <div class="join-page-container">
+        <h1>
+          Become Part Of The
+
+          <span> AIJAMII Journey </span>
+        </h1>
+
+        <p>
+          Join learners, creators, and innovators exploring how AI can create
+          positive impact in communities.
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM SECTION -->
+
+    <section class="join-form-section">
+      <div class="join-form-container">
+        <div class="form-intro">
+          <h2>Let's Build The Future Together</h2>
+
+          <p>Tell us how you would like to be part of AIJAMII SAFARI.</p>
         </div>
 
+        <form class="aijamii-form">
+          <input type="text" name="fullName" placeholder="Full Name" required />
 
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
 
-    </nav>
+          <select name="interest" required>
+            <option value="">Your Interest</option>
 
+            <option value="AI Learning">AI Learning</option>
 
-</header>
+            <option value="Creative Technology">Creative Technology</option>
 
+            <option value="Community Projects">Community Projects</option>
 
+            <option value="Partnership">Partnership</option>
+          </select>
 
+          <textarea
+            name="message"
+            placeholder="Tell us about yourself"
+            required
+          ></textarea>
 
+          <button type="submit">
+            Join AIJAMII
 
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
 
-
-<!-- JOIN HERO -->
-
-
-<section class="join-page-hero">
-
-
-<div class="join-page-container">
-
-
-<h1>
-
-Become Part Of The
-
-<span>
-AIJAMII Journey
-</span>
-
-</h1>
-
-
-
-<p>
-
-Join learners, creators, and innovators
-exploring how AI can create positive
-impact in communities.
-
-</p>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- FORM SECTION -->
-
-
-<section class="join-form-section">
-
-
-
-<div class="join-form-container">
-
-
-
-<div class="form-intro">
-
-
-<h2>
-
-Let's Build The Future Together
-
-</h2>
-
-
-<p>
-
-Tell us how you would like to be
-part of AIJAMII SAFARI.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<form class="aijamii-form">
-
-
-<input 
-type="text"
-placeholder="Full Name"
-required
->
-
-
-
-<input 
-type="email"
-placeholder="Email Address"
-required
->
-
-
-
-
-<select>
-
-
-<option>
-Your Interest
-</option>
-
-
-<option>
-AI Learning
-</option>
-
-
-<option>
-Creative Technology
-</option>
-
-
-<option>
-Community Projects
-</option>
-
-
-<option>
-Partnership
-</option>
-
-
-</select>
-
-
-
-
-
-<textarea
-
-placeholder="Tell us about yourself"
-
-></textarea>
-
-
-
-
-
-<button type="submit">
-
-Join AIJAMII
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</button>
-
-
-
-</form>
-
-
-
-</div>
-
-
-
-</section>
-
-
-<!-- /*==================================================
+    <!-- /*==================================================
 AIJAMII SAFARI FOOTER
 ==================================================*/ -->
 
-<footer class="aijamii-footer">
-
-
-    <div class="footer-container">
-
-
-
-
-
+    <footer class="aijamii-footer">
+      <div class="footer-container">
         <!-- BRAND -->
 
         <div class="footer-brand">
+          <h2>
+            AIJAMII
 
+            <span> SAFARI </span>
+          </h2>
 
-            <h2>
+          <p>
+            Exploring the future of artificial intelligence through community,
+            creativity, and human connection.
+          </p>
 
-                AIJAMII
+          <div class="footer-socials">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
 
-                <span>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
 
-                    SAFARI
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
 
-                </span>
-
-            </h2>
-
-
-
-            <p>
-
-                Exploring the future of artificial
-                intelligence through community,
-                creativity, and human connection.
-
-            </p>
-
-
-
-
-
-            <div class="footer-socials">
-
-
-                <a href="#">
-
-                    <i class="fa-brands fa-facebook"></i>
-
-                </a>
-
-
-                <a href="#">
-
-                    <i class="fa-brands fa-linkedin"></i>
-
-                </a>
-
-
-                <a href="#">
-
-                    <i class="fa-brands fa-x-twitter"></i>
-
-                </a>
-
-
-                <a href="#">
-
-                    <i class="fa-brands fa-instagram"></i>
-
-                </a>
-
-
-
-            </div>
-
-
-
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
-
-
-
-
-
-
 
         <!-- DISCOVER -->
 
         <div class="footer-links">
+          <h3>Discover</h3>
 
+          <a href="#"> About AIJAMII </a>
 
-            <h3>
+          <a href="#"> Initiatives </a>
 
-                Discover
-
-            </h3>
-
-
-            <a href="#">
-
-                About AIJAMII
-
-            </a>
-
-
-            <a href="#">
-
-                Initiatives
-
-            </a>
-
-
-            <a href="#">
-
-                Community
-
-            </a>
-
-
+          <a href="#"> Community </a>
         </div>
-
-
-
-
-
-
 
         <!-- CONNECT -->
 
         <div class="footer-links">
+          <h3>Connect</h3>
 
+          <a href="join.html"> Join Movement </a>
 
-            <h3>
+          <a href="#"> Partner With Us </a>
 
-                Connect
-
-            </h3>
-
-
-            <a href="join.html">
-
-                Join Movement
-
-            </a>
-
-
-            <a href="#">
-
-                Partner With Us
-
-            </a>
-
-
-            <a href="#">
-
-                Contact
-
-            </a>
-
-
+          <a href="#"> Contact </a>
         </div>
+      </div>
 
+      <div class="footer-bottom">
+        <p>
+          © 2026 AIJAMII SAFARI. Building a future where AI serves humanity.
+        </p>
 
+        <div class="ecosystem-link">
+          <span> Part of the </span>
 
-
-
-
-    </div>
-
-
-
-
-
-
-
-    <div class="footer-bottom">
-
-
-
-    <p>
-
-        © 2026 AIJAMII SAFARI.
-        Building a future where AI serves humanity.
-
-    </p>
-
-
-
-
-    <div class="ecosystem-link">
-
-
-        <span>
-
-            Part of the
-
-        </span>
-
-
-        <a href="../index.html">
-
-
+          <a href="../index.html">
             NextChapter Ecosystem
 
             <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
-
-        </a>
-
-
-
-    </div>
-
-
-
-
-</div>
-
-
-
-</footer>
-
-
-
-
-</body>
-
+    <script src="join.js"></script>
+  </body>
 </html>

@@ -95,20 +95,100 @@ if (contactSection) {
 }
 
 /*==================================================
-CONTACT FORM (TEMPORARY)
+CONTACT FORM
 ==================================================*/
 
 const contactForm = document.querySelector(".contact-form form");
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", function(e){
+    let contactStatus = contactForm.querySelector(".form-status");
+
+    if (!contactStatus) {
+
+        contactStatus = document.createElement("p");
+
+        contactStatus.className = "form-status";
+
+        contactStatus.setAttribute("role", "status");
+
+        contactStatus.setAttribute("aria-live", "polite");
+
+        contactForm.appendChild(contactStatus);
+
+    }
+
+    contactForm.addEventListener("submit", async function(e){
 
         e.preventDefault();
 
-        alert("Thank you for contacting NextChapter Innovation! We'll get back to you as soon as possible.");
+        const submitButton = contactForm.querySelector('button[type="submit"]');
 
-        contactForm.reset();
+        const formData = new FormData(contactForm);
+
+        const payload = {
+
+            type: "contact",
+
+            fullName: formData.get("fullName"),
+
+            email: formData.get("email"),
+
+            organization: formData.get("organization") || "",
+
+            subject: formData.get("subject") || "",
+
+            message: formData.get("message")
+
+        };
+
+        submitButton.disabled = true;
+
+        submitButton.textContent = "Sending...";
+
+        contactStatus.textContent = "Sending your message...";
+
+        contactStatus.className = "form-status loading";
+
+        try {
+
+            const response = await fetch("/api/enquiries", {
+
+                method: "POST",
+
+                headers: { "Content-Type": "application/json" },
+
+                body: JSON.stringify(payload)
+
+            });
+
+            const data = await response.json().catch(() => ({}));
+
+            if (!response.ok) {
+
+                throw new Error(data.message || "Unable to send your message. Please try again.");
+
+            }
+
+            contactStatus.textContent = data.message || "Thank you. Your message has been received.";
+
+            contactStatus.className = "form-status success";
+
+            contactForm.reset();
+
+        } catch (error) {
+
+            contactStatus.textContent = error.message || "Unable to send your message. Please try again.";
+
+            contactStatus.className = "form-status error";
+
+        } finally {
+
+            submitButton.disabled = false;
+
+            submitButton.textContent = "Send Message";
+
+        }
 
     });
 

@@ -2,45 +2,86 @@
 JOIN FORM TEMP HANDLER
 ==================================================*/
 
+const joinForm = document.querySelector(".aijamii-form");
 
-const joinForm = document.querySelector(
+if (joinForm) {
+  let joinStatus = joinForm.querySelector(".form-status");
 
-    ".aijamii-form"
+  if (!joinStatus) {
+    joinStatus = document.createElement("p");
 
-);
+    joinStatus.className = "form-status";
 
+    joinStatus.setAttribute("role", "status");
 
+    joinStatus.setAttribute("aria-live", "polite");
 
-if(joinForm){
+    joinForm.appendChild(joinStatus);
+  }
 
+  joinForm.addEventListener(
+    "submit",
 
-    joinForm.addEventListener(
+    async (event) => {
+      event.preventDefault();
 
-        "submit",
+      const submitButton = joinForm.querySelector('button[type="submit"]');
 
-        (e)=>{
+      const formData = new FormData(joinForm);
 
+      const payload = {
+        type: "join",
 
-            e.preventDefault();
+        fullName: formData.get("fullName"),
 
+        email: formData.get("email"),
 
+        interest: formData.get("interest"),
 
-            alert(
+        message: formData.get("message"),
+      };
 
-                "Thank you for joining AIJAMII SAFARI! We will connect with you soon."
+      submitButton.disabled = true;
 
-            );
+      submitButton.firstChild.textContent = "Sending... ";
 
+      joinStatus.textContent = "Sending your request...";
 
+      joinStatus.className = "form-status loading";
 
-            joinForm.reset();
+      try {
+        const response = await fetch("/api/enquiries", {
+          method: "POST",
 
+          headers: { "Content-Type": "application/json" },
 
+          body: JSON.stringify(payload),
+        });
 
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(
+            data.message || "Unable to submit your request. Please try again.",
+          );
         }
 
+        joinStatus.textContent =
+          data.message || "Thank you for joining AIJAMII SAFARI!";
 
-    );
+        joinStatus.className = "form-status success";
 
+        joinForm.reset();
+      } catch (error) {
+        joinStatus.textContent =
+          error.message || "Unable to submit your request. Please try again.";
 
+        joinStatus.className = "form-status error";
+      } finally {
+        submitButton.disabled = false;
+
+        submitButton.firstChild.textContent = "Join AIJAMII ";
+      }
+    },
+  );
 }

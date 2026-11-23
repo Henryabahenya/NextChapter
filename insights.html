@@ -1,1227 +1,592 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>NextChapter | Engineering Digital Ecosystems</title>
 
     <!-- Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="insights.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="insights.css" />
+  </head>
 
-</head>
-
-<body>
-
-
-<!--==========================
+  <body>
+    <!--==========================
         HEADER
 ===========================-->
 
-<header>
-
-    <nav class="navbar">
-
-
+    <header>
+      <nav class="navbar">
         <!-- LOGO -->
 
-        <a href="./indext.html" class="logo">
-
-            <span>Next</span>Chapter
-
-        </a>
-
-
-
-
+        <a href="./indext.html" class="logo"> <span>Next</span>Chapter </a>
 
         <!-- NAVIGATION -->
 
         <ul class="nav-links">
-
-
-            <!-- COMPANY DROPDOWN -->
-
-            <li class="dropdown">
-
-
-                <a href="#">
-
-                    Company
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </a>
-
-
-
-                <ul class="dropdown-menu">
-
-
-                    <li>
-
-                        <a href="./about.html">
-
-                            About
-
-                        </a>
-
-                    </li>
-
-
-
-                    <li>
-
-                        <a href="./services.html">
-
-                            Services
-
-                        </a>
-
-                    </li>
-
-
-
-                    <li>
-
-                        <a href="./projects.html">
-
-                            Projects
-
-                        </a>
-
-                    </li>
-
-
-                </ul>
-
-
-            </li>
-
-
-
-
-
-
-
-
-            <!-- ECOSYSTEM DROPDOWN -->
-
-            <li class="dropdown">
-
-
-                <a href="#">
-
-                    Ecosystem
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </a>
-
-
-
-
-                <ul class="dropdown-menu">
-
-
-                    <li>
-
-                        <a href="./aijamii.html">
-
-                            AIJAMII SAFARI
-
-                        </a>
-
-                    </li>
-
-
-
-                    <li>
-
-                        <a href="./creative.html">
-
-                            Chapter Creative Solutions
-
-                        </a>
-
-                    </li>
-
-
-                </ul>
-
-
-
-            </li>
-
-
-
-
-
-
-
-
-
-            <!-- RESOURCES DROPDOWN -->
-
-            <li class="dropdown">
-
-
-                <a href="#">
-
-                    Resources
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </a>
-
-
-
-
-                <ul class="dropdown-menu">
-
-
-                    <li>
-
-                        <a href="./partners.html">
-
-                            Partners
-
-                        </a>
-
-                    </li>
-
-
-
-                    <li>
-
-                        <a href="./insights.html">
-
-                            Insights
-
-                        </a>
-
-                    </li>
-
-
-
-                    <li>
-
-                        <a href="./contact.html">
-
-                            Contact
-
-                        </a>
-
-                    </li>
-
-
-                </ul>
-
-
-            </li>
-
-
-
+          <!-- COMPANY DROPDOWN -->
+
+          <li class="dropdown">
+            <a href="#">
+              Company
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="./about.html"> About </a>
+              </li>
+
+              <li>
+                <a href="./services.html"> Services </a>
+              </li>
+
+              <li>
+                <a href="./projects.html"> Projects </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ECOSYSTEM DROPDOWN -->
+
+          <li class="dropdown">
+            <a href="#">
+              Ecosystem
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="./aijamii.html"> AIJAMII SAFARI </a>
+              </li>
+
+              <li>
+                <a href="./creative.html"> Chapter Creative Solutions </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- RESOURCES DROPDOWN -->
+
+          <li class="dropdown">
+            <a href="#">
+              Resources
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="./partners.html"> Partners </a>
+              </li>
+
+              <li>
+                <a href="./insights.html"> Insights </a>
+              </li>
+
+              <li>
+                <a href="./contact.html"> Contact </a>
+              </li>
+            </ul>
+          </li>
         </ul>
-
-
-
-
-
-
-
 
         <!-- BUTTON -->
 
-
-        <a href="./contact.html" class="btn nav-btn">
-
-            Explore Ecosystem
-
-        </a>
-
-
-
-
-
+        <a href="./contact.html" class="btn nav-btn"> Explore Ecosystem </a>
 
         <!-- MOBILE MENU -->
 
-
         <div class="menu-btn">
-
-            <i class="fa-solid fa-bars"></i>
-
+          <i class="fa-solid fa-bars"></i>
         </div>
+      </nav>
+    </header>
 
-
-
-    </nav>
-
-
-</header>
-
-<!--==================================================
+    <!--==================================================
 INSIGHTS HERO
 ==================================================-->
 
-<section class="insights-hero">
+    <section class="insights-hero">
+      <!-- Background Effects -->
 
-    <!-- Background Effects -->
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
 
-    <div class="hero-glow glow-one"></div>
-    <div class="hero-glow glow-two"></div>
+      <div class="hero-grid"></div>
 
-    <div class="hero-grid"></div>
-
-
-
-
-
-    <div class="insights-content">
-
-        <span class="section-tag">
-
-            Knowledge Hub
-
-        </span>
+      <div class="insights-content">
+        <span class="section-tag"> Knowledge Hub </span>
 
         <h1>
+          Insights That
 
-            Insights That
-
-            <span>Inspire Innovation</span>
-
+          <span>Inspire Innovation</span>
         </h1>
 
         <p>
-
-            Discover practical articles, digital trends,
-            project stories, tutorials, and ideas shaping
-            the future of technology, creativity,
-            entrepreneurship, and community innovation.
-
+          Discover practical articles, digital trends, project stories,
+          tutorials, and ideas shaping the future of technology, creativity,
+          entrepreneurship, and community innovation.
         </p>
 
-
-
-
-
         <div class="hero-buttons">
+          <a href="#articles" class="btn primary"> Explore Articles </a>
 
-            <a href="#articles" class="btn primary">
-
-                Explore Articles
-
-            </a>
-
-            <a href="#categories" class="btn secondary">
-
-                Browse Topics
-
-            </a>
-
+          <a href="#categories" class="btn secondary"> Browse Topics </a>
         </div>
-
-
-
-
 
         <!-- Categories -->
 
         <div class="hero-tags">
+          <span>AI</span>
 
-            <span>AI</span>
+          <span>Web Development</span>
 
-            <span>Web Development</span>
+          <span>WordPress</span>
 
-            <span>WordPress</span>
+          <span>Graphic Design</span>
 
-            <span>Graphic Design</span>
+          <span>Branding</span>
 
-            <span>Branding</span>
+          <span>UI / UX</span>
 
-            <span>UI / UX</span>
+          <span>Digital Skills</span>
 
-            <span>Digital Skills</span>
-
-            <span>Technology</span>
-
+          <span>Technology</span>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!--==================================================
+    <!--==================================================
 FEATURED ARTICLE
 ==================================================-->
 
-<section class="featured-section" id="articles">
-
-    <div class="featured-header">
-
-        <span class="section-tag">
-
-            Featured Story
-
-        </span>
+    <section class="featured-section" id="articles">
+      <div class="featured-header">
+        <span class="section-tag"> Featured Story </span>
 
         <h2>
+          Explore Our
 
-            Explore Our
-
-            <span>Latest Insight</span>
-
+          <span>Latest Insight</span>
         </h2>
+      </div>
 
-    </div>
-
-
-
-
-
-    <article class="featured-article">
-
+      <article class="featured-article">
         <div class="featured-image">
-
-            <img
-                src="./hub-insight.jpg"
-                alt="Featured Insight">
-
+          <img src="./hub-insight.jpg" alt="Featured Insight" />
         </div>
-
-
-
-
 
         <div class="featured-content">
+          <div class="article-meta">
+            <span>
+              <i class="fa-solid fa-calendar"></i>
 
-            <div class="article-meta">
+              July 2026
+            </span>
 
-                <span>
+            <span>
+              <i class="fa-solid fa-clock"></i>
 
-                    <i class="fa-solid fa-calendar"></i>
+              6 min read
+            </span>
+          </div>
 
-                    July 2026
+          <h2>Engineering Digital Ecosystems for Human Progress</h2>
 
-                </span>
+          <p>
+            Discover how innovation, creativity, digital skills, and technology
+            can empower communities and organizations to build sustainable
+            futures.
+          </p>
 
-                <span>
-
-                    <i class="fa-solid fa-clock"></i>
-
-                    6 min read
-
-                </span>
-
-            </div>
-
-
-
-
-
-            <h2>
-
-                Engineering Digital Ecosystems
-                for Human Progress
-
-            </h2>
-
-
-
-
-
-            <p>
-
-                Discover how innovation, creativity,
-                digital skills, and technology can
-                empower communities and organizations
-                to build sustainable futures.
-
-            </p>
-
-
-
-
-
-            <a href="#" class="btn primary">
-
-                Read Article
-
-            </a>
-
+          <a href="#" class="btn primary"> Read Article </a>
         </div>
+      </article>
+    </section>
 
-    </article>
-
-</section>
-
-<!--==================================================
+    <!--==================================================
 EXPLORE KNOWLEDGE
 ==================================================-->
 
-<section class="knowledge-section" id="categories">
-
-    <div class="knowledge-header">
-
-        <span class="section-tag">
-
-            Explore Knowledge
-
-        </span>
+    <section class="knowledge-section" id="categories">
+      <div class="knowledge-header">
+        <span class="section-tag"> Explore Knowledge </span>
 
         <h2>
+          Browse by
 
-            Browse by
-
-            <span>Topic</span>
-
+          <span>Topic</span>
         </h2>
 
         <p>
-
-            Explore insights across technology, creativity,
-            innovation, digital skills, entrepreneurship,
-            and community development.
-
+          Explore insights across technology, creativity, innovation, digital
+          skills, entrepreneurship, and community development.
         </p>
+      </div>
 
-    </div>
-
-
-
-
-
-    <div class="knowledge-grid">
-
+      <div class="knowledge-grid">
         <a href="#" class="knowledge-card">
+          <i class="fa-solid fa-brain"></i>
 
-            <i class="fa-solid fa-brain"></i>
+          <h3>Artificial Intelligence</h3>
 
-            <h3>Artificial Intelligence</h3>
-
-            <p>AI trends, tools, ethics and practical applications.</p>
-
+          <p>AI trends, tools, ethics and practical applications.</p>
         </a>
 
-
-
-
-
         <a href="#" class="knowledge-card">
+          <i class="fa-solid fa-code"></i>
 
-            <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
 
-            <h3>Web Development</h3>
-
-            <p>HTML, CSS, JavaScript, WordPress and modern web technologies.</p>
-
+          <p>HTML, CSS, JavaScript, WordPress and modern web technologies.</p>
         </a>
 
-
-
-
-
         <a href="#" class="knowledge-card">
+          <i class="fa-solid fa-palette"></i>
 
-            <i class="fa-solid fa-palette"></i>
+          <h3>Graphic Design</h3>
 
-            <h3>Graphic Design</h3>
-
-            <p>Brand identity, visual storytelling and creative workflows.</p>
-
+          <p>Brand identity, visual storytelling and creative workflows.</p>
         </a>
 
-
-
-
-
         <a href="#" class="knowledge-card">
+          <i class="fa-solid fa-lightbulb"></i>
 
-            <i class="fa-solid fa-lightbulb"></i>
+          <h3>Innovation</h3>
 
-            <h3>Innovation</h3>
-
-            <p>Ideas, entrepreneurship and solving problems with technology.</p>
-
+          <p>Ideas, entrepreneurship and solving problems with technology.</p>
         </a>
 
-
-
-
-
         <a href="#" class="knowledge-card">
+          <i class="fa-solid fa-users"></i>
 
-            <i class="fa-solid fa-users"></i>
+          <h3>Community Impact</h3>
 
-            <h3>Community Impact</h3>
-
-            <p>Stories of digital transformation and social innovation.</p>
-
+          <p>Stories of digital transformation and social innovation.</p>
         </a>
 
-
-
-
-
         <a href="#" class="knowledge-card">
+          <i class="fa-solid fa-graduation-cap"></i>
 
-            <i class="fa-solid fa-graduation-cap"></i>
+          <h3>Digital Skills</h3>
 
-            <h3>Digital Skills</h3>
-
-            <p>Learning resources, tutorials and career development.</p>
-
+          <p>Learning resources, tutorials and career development.</p>
         </a>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!--==================================================
+    <!--==================================================
 LATEST STORIES
 ==================================================-->
 
-<section class="stories-section">
-
-    <div class="stories-header">
-
-        <span class="section-tag">
-
-            Latest Stories
-
-        </span>
+    <section class="stories-section">
+      <div class="stories-header">
+        <span class="section-tag"> Latest Stories </span>
 
         <h2>
-
-            Fresh Ideas &
-            <span>Digital Perspectives</span>
-
+          Fresh Ideas &
+          <span>Digital Perspectives</span>
         </h2>
 
         <p>
-
-            Discover our latest articles, tutorials, project stories,
-            industry trends, and practical insights designed to inspire
-            innovation and continuous learning.
-
+          Discover our latest articles, tutorials, project stories, industry
+          trends, and practical insights designed to inspire innovation and
+          continuous learning.
         </p>
+      </div>
 
-    </div>
-
-
-
-
-
-    <!--============================
+      <!--============================
     FEATURED STORY
     ============================-->
 
-    <div class="story-featured">
-
+      <div class="story-featured">
         <div class="story-image">
-
-            <img src="./digisystem.jpg"
-                alt="Featured Story">
-
+          <img src="./digisystem.jpg" alt="Featured Story" />
         </div>
-
-
-
-
 
         <div class="story-content">
+          <span class="story-category"> Innovation </span>
 
-            <span class="story-category">
+          <h2>Why Digital Ecosystems Matter More Than Ever</h2>
 
-                Innovation
+          <p>
+            Discover how connected digital solutions are transforming
+            businesses, communities, education, and innovation across Africa and
+            beyond.
+          </p>
 
+          <div class="story-meta">
+            <span>
+              <i class="fa-solid fa-calendar"></i>
+
+              July 2026
             </span>
 
-            <h2>
+            <span>
+              <i class="fa-solid fa-clock"></i>
 
-                Why Digital Ecosystems Matter More Than Ever
+              7 min read
+            </span>
+          </div>
 
-            </h2>
-
-            <p>
-
-                Discover how connected digital solutions are transforming
-                businesses, communities, education, and innovation across
-                Africa and beyond.
-
-            </p>
-
-            <div class="story-meta">
-
-                <span>
-
-                    <i class="fa-solid fa-calendar"></i>
-
-                    July 2026
-
-                </span>
-
-                <span>
-
-                    <i class="fa-solid fa-clock"></i>
-
-                    7 min read
-
-                </span>
-
-            </div>
-
-            <a href="#" class="btn primary">
-
-                Read Story
-
-            </a>
-
+          <a href="#" class="btn primary"> Read Story </a>
         </div>
+      </div>
 
-    </div>
-
-
-
-
-
-    <!--============================
+      <!--============================
     STORY GRID
     ============================-->
 
-    <div class="stories-grid">
-
+      <div class="stories-grid">
         <article class="story-card">
+          <img src="./ai-changing.jpg" alt="Story" />
 
-            <img src="./ai-changing.jpg" alt="Story">
+          <span class="story-category"> AI </span>
 
-            <span class="story-category">
+          <h3>AI Is Changing The Future Of Learning</h3>
 
-                AI
+          <p>
+            Explore how AI tools are making education more accessible and
+            personalized.
+          </p>
 
-            </span>
+          <div class="story-meta">
+            <span>5 min read</span>
 
-            <h3>
-
-                AI Is Changing The Future Of Learning
-
-            </h3>
-
-            <p>
-
-                Explore how AI tools are making education more
-                accessible and personalized.
-
-            </p>
-
-            <div class="story-meta">
-
-                <span>5 min read</span>
-
-                <a href="#">
-
-                    Read More →
-
-                </a>
-
-            </div>
-
+            <a href="#"> Read More → </a>
+          </div>
         </article>
 
-
-
-
-
         <article class="story-card">
+          <img src="./better-website.jpg" alt="Story" />
 
-            <img src="./better-website.jpg" alt="Story">
+          <span class="story-category"> Web Development </span>
 
-            <span class="story-category">
+          <h3>Building Better Websites In 2026</h3>
 
-                Web Development
+          <p>
+            Practical ideas for creating fast, responsive and accessible
+            websites.
+          </p>
 
-            </span>
+          <div class="story-meta">
+            <span>4 min read</span>
 
-            <h3>
-
-                Building Better Websites In 2026
-
-            </h3>
-
-            <p>
-
-                Practical ideas for creating fast,
-                responsive and accessible websites.
-
-            </p>
-
-            <div class="story-meta">
-
-                <span>4 min read</span>
-
-                <a href="#">
-
-                    Read More →
-
-                </a>
-
-            </div>
-
+            <a href="#"> Read More → </a>
+          </div>
         </article>
 
-
-
-
-
         <article class="story-card">
+          <img src="./brand.jpg" alt="Story" />
 
-            <img src="./brand.jpg" alt="Story">
+          <span class="story-category"> Branding </span>
 
-            <span class="story-category">
+          <h3>Building Brands That People Remember</h3>
 
-                Branding
+          <p>Learn how strong visual identity builds trust and recognition.</p>
 
-            </span>
+          <div class="story-meta">
+            <span>6 min read</span>
 
-            <h3>
-
-                Building Brands That People Remember
-
-            </h3>
-
-            <p>
-
-                Learn how strong visual identity builds
-                trust and recognition.
-
-            </p>
-
-            <div class="story-meta">
-
-                <span>6 min read</span>
-
-                <a href="#">
-
-                    Read More →
-
-                </a>
-
-            </div>
-
+            <a href="#"> Read More → </a>
+          </div>
         </article>
 
-
-
-
-
         <article class="story-card">
+          <img src="./ompact.JPG" alt="Story" />
 
-            <img src="./ompact.JPG" alt="Story">
+          <span class="story-category"> Community </span>
 
-            <span class="story-category">
+          <h3>Technology Driving Social Impact</h3>
 
-                Community
+          <p>
+            Stories about innovation creating meaningful change in communities.
+          </p>
 
-            </span>
+          <div class="story-meta">
+            <span>5 min read</span>
 
-            <h3>
-
-                Technology Driving Social Impact
-
-            </h3>
-
-            <p>
-
-                Stories about innovation creating meaningful
-                change in communities.
-
-            </p>
-
-            <div class="story-meta">
-
-                <span>5 min read</span>
-
-                <a href="#">
-
-                    Read More →
-
-                </a>
-
-            </div>
-
+            <a href="#"> Read More → </a>
+          </div>
         </article>
+      </div>
 
-    </div>
+      <div class="stories-btn">
+        <a href="#" class="btn secondary"> View All Articles </a>
+      </div>
+    </section>
 
-
-
-
-
-    <div class="stories-btn">
-
-        <a href="#" class="btn secondary">
-
-            View All Articles
-
-        </a>
-
-    </div>
-
-</section>
-
-<!--==================================================
+    <!--==================================================
 NEWSLETTER SECTION
 ==================================================-->
 
-<section class="newsletter-section">
-
-    <div class="newsletter-container">
-
-
+    <section class="newsletter-section">
+      <div class="newsletter-container">
         <div class="newsletter-content">
+          <span class="section-tag"> Stay Updated </span>
 
+          <h2>
+            Never Miss New
 
-            <span class="section-tag">
+            <span>Insights</span>
+          </h2>
 
-                Stay Updated
-
-            </span>
-
-
-            <h2>
-
-                Never Miss New
-
-                <span>Insights</span>
-
-            </h2>
-
-
-            <p>
-
-                Receive the latest articles, digital trends,
-                tutorials, project stories, and innovation updates
-                from NextChapter.
-
-            </p>
-
-
+          <p>
+            Receive the latest articles, digital trends, tutorials, project
+            stories, and innovation updates from NextChapter.
+          </p>
         </div>
 
-
-
-
-
         <form class="newsletter-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
 
-
-            <input 
-                type="email"
-                placeholder="Enter your email address"
-                required
-            >
-
-
-            <button type="submit">
-
-                Subscribe
-
-            </button>
-
-
+          <button type="submit">Subscribe</button>
         </form>
+      </div>
+    </section>
 
-
-
-
-    </div>
-
-</section>
-
-<!--==================================================
+    <!--==================================================
 FINAL CTA SECTION
 ==================================================-->
 
-<section class="insights-cta">
-
-    <div class="cta-content">
-
-
-        <span class="section-tag">
-
-            Let's Create Together
-
-        </span>
-
-
+    <section class="insights-cta">
+      <div class="cta-content">
+        <span class="section-tag"> Let's Create Together </span>
 
         <h2>
+          Ideas Become Impact
 
-            Ideas Become Impact
-
-            <span>Through Collaboration</span>
-
+          <span>Through Collaboration</span>
         </h2>
 
-
-
         <p>
-
-            Have an idea, project, or challenge?
-            Let's work together to transform knowledge
-            and innovation into meaningful digital solutions.
-
+          Have an idea, project, or challenge? Let's work together to transform
+          knowledge and innovation into meaningful digital solutions.
         </p>
 
-
-
         <div class="cta-buttons">
+          <a href="contact.html" class="btn primary"> Start a Conversation </a>
 
-
-            <a href="contact.html" class="btn primary">
-
-                Start a Conversation
-
-            </a>
-
-
-
-            <a href="services.html" class="btn secondary">
-
-                Explore Services
-
-            </a>
-
-
+          <a href="services.html" class="btn secondary"> Explore Services </a>
         </div>
+      </div>
+    </section>
 
-
-    </div>
-
-</section>
-
-<!--==================================================
+    <!--==================================================
 FOOTER
 ==================================================-->
 
-<footer class="footer">
-
-
-    <div class="footer-container">
-
-
-
+    <footer class="footer">
+      <div class="footer-container">
         <!-- BRAND -->
 
         <div class="footer-brand">
+          <a href="#" class="footer-logo"> Next<span>Chapter</span> </a>
 
+          <p>
+            Engineering digital ecosystems for human progress through
+            technology, creativity, and innovation.
+          </p>
 
-            <a href="#" class="footer-logo">
-
-                Next<span>Chapter</span>
-
+          <div class="footer-social">
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
             </a>
 
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
 
-            <p>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
 
-                Engineering digital ecosystems
-                for human progress through
-                technology, creativity, and innovation.
-
-            </p>
-
-
-
-            <div class="footer-social">
-
-
-                <a href="#">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-
-                <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-
-
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-
-                <a href="#">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-
-
-            </div>
-
-
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
         </div>
-
-
-
-
 
         <!-- QUICK LINKS -->
 
         <div class="footer-links">
+          <h3>Explore</h3>
 
+          <a href="#"> Home </a>
 
-            <h3>
-                Explore
-            </h3>
+          <a href="#"> About Us </a>
 
+          <a href="#"> Projects </a>
 
-            <a href="#">
-                Home
-            </a>
-
-
-            <a href="#">
-                About Us
-            </a>
-
-
-            <a href="#">
-                Projects
-            </a>
-
-
-            <a href="#">
-                Contact
-            </a>
-
-
+          <a href="#"> Contact </a>
         </div>
-
-
-
-
-
 
         <!-- SERVICES -->
 
         <div class="footer-links">
+          <h3>Solutions</h3>
 
+          <a href="#"> AI & Innovation </a>
 
-            <h3>
-                Solutions
-            </h3>
+          <a href="#"> Digital Skills </a>
 
+          <a href="#"> Creative Technology </a>
 
-            <a href="#">
-                AI & Innovation
-            </a>
-
-
-            <a href="#">
-                Digital Skills
-            </a>
-
-
-            <a href="#">
-                Creative Technology
-            </a>
-
-
-            <a href="#">
-                Community Impact
-            </a>
-
-
+          <a href="#"> Community Impact </a>
         </div>
-
-
-
-
-
-
 
         <!-- CONTACT -->
 
         <div class="footer-links">
+          <h3>Connect</h3>
 
+          <a href="#"> hello@nextchapter.com </a>
 
-            <h3>
-                Connect
-            </h3>
+          <a href="#"> Nairobi, Kenya </a>
 
-
-            <a href="#">
-                hello@nextchapter.com
-            </a>
-
-
-            <a href="#">
-                Nairobi, Kenya
-            </a>
-
-
-            <a href="#">
-                Partner With Us
-            </a>
-
-
+          <a href="#"> Partner With Us </a>
         </div>
+      </div>
 
-
-
-    </div>
-
-
-
-
-
-    <div class="footer-bottom">
-
+      <div class="footer-bottom">
+        <p>© 2026 NextChapter. All Rights Reserved.</p>
 
         <p>
-
-            © 2026 NextChapter.
-            All Rights Reserved.
-
+          Built with
+          <span> Technology & Creativity </span>
         </p>
+      </div>
+    </footer>
 
-
-
-        <p>
-
-            Built with 
-            <span>
-                Technology & Creativity
-            </span>
-
-        </p>
-
-
-    </div>
-
-
-
-</footer>
-
-<script src="./script.js"></script>
-<script src="./insights.js"></script>
-</body>
+    <script src="./script.js"></script>
+    <script src="./insights.js"></script>
+  </body>
 </html>
