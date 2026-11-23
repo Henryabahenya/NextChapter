@@ -1,0 +1,1467 @@
+/*==================================================
+SERVICES HERO SECTION
+==================================================*/
+
+.services-hero{
+
+    min-height:90vh;
+
+    padding:120px 8% 80px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    background:#ffffff;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+/*==================================================
+CONTENT
+==================================================*/
+
+
+.services-hero-content{
+
+    max-width:650px;
+
+}
+
+
+
+.services-hero-content .section-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    background:#EFF6FF;
+
+    color:var(--primary);
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    font-size:.9rem;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.services-hero-content h1{
+
+    font-size:4rem;
+
+    line-height:1.15;
+
+    color:var(--dark);
+
+    margin-bottom:25px;
+
+}
+
+
+
+.services-hero-content h1 span{
+
+    color:var(--gold);
+
+}
+
+
+
+.services-hero-content p{
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    color:var(--text);
+
+    max-width:550px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+/*==================================================
+BUTTONS
+==================================================*/
+
+
+.services-hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.services-hero-buttons .btn{
+
+    padding:15px 32px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+
+
+.services-hero-buttons .primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+.services-hero-buttons .primary:hover{
+
+    background:var(--gold);
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.services-hero-buttons .secondary{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+
+
+.services-hero-buttons .secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+IMAGE
+==================================================*/
+
+
+.services-hero-image{
+
+    position:relative;
+
+}
+
+
+
+.services-hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    background:var(--gold);
+
+    opacity:.15;
+
+    border-radius:50%;
+
+    top:-60px;
+
+    right:-50px;
+
+}
+
+
+
+.services-hero-image img{
+
+    width:100%;
+
+    height:600px;
+
+    object-fit:cover;
+
+    border-radius:40px;
+
+    position:relative;
+
+    z-index:2;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.15);
+
+}
+
+/*==================================================
+SERVICES HERO RESPONSIVE
+==================================================*/
+
+
+@media(max-width:1000px){
+
+
+    .services-hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+
+    .services-hero-content{
+
+        margin:auto;
+
+    }
+
+
+    .services-hero-content p{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .services-hero-buttons{
+
+        justify-content:center;
+
+    }
+
+
+    .services-hero-image{
+
+        order:-1;
+
+    }
+
+
+    .services-hero-image img{
+
+        height:450px;
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .services-hero{
+
+        padding:100px 6% 70px;
+
+    }
+
+
+    .services-hero-content h1{
+
+        font-size:2.5rem;
+
+    }
+
+
+    .services-hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .services-hero-buttons .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+
+    .services-hero-image img{
+
+        height:350px;
+
+        border-radius:25px;
+
+    }
+
+
+}
+
+/*==================================================
+SERVICES HERO ANIMATION
+==================================================*/
+
+
+.services-hero-content,
+.services-hero-image{
+
+    opacity:0;
+
+    transition:1s ease;
+
+}
+
+
+
+.services-hero-content{
+
+    transform:translateX(-60px);
+
+}
+
+
+
+.services-hero-image{
+
+    transform:translateX(60px);
+
+}
+
+
+
+.services-hero-content.show,
+.services-hero-image.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/*==================================================
+SERVICE CATEGORIES SECTION
+==================================================*/
+
+.service-categories{
+
+    padding:120px 8%;
+
+    background:#F8FAFC;
+
+}
+
+
+
+/*==================================================
+HEADER
+==================================================*/
+
+
+.services-header{
+
+    max-width:750px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+
+
+.services-header .section-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    background:#EFF6FF;
+
+    color:var(--primary);
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    font-size:.9rem;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.services-header h2{
+
+    font-size:3rem;
+
+    color:var(--dark);
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.services-header h2 span{
+
+    color:var(--gold);
+
+}
+
+
+
+.services-header p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    font-size:1.05rem;
+
+}
+
+
+
+
+
+/*==================================================
+SERVICE GRID
+==================================================*/
+
+
+.service-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+
+/*==================================================
+SERVICE CARD
+==================================================*/
+
+
+.service-card{
+
+    background:white;
+
+    padding:40px 35px;
+
+    border-radius:30px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    transition:.5s ease;
+
+}
+
+
+
+.service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    background:var(--gold);
+
+    border-radius:50%;
+
+    opacity:.08;
+
+    right:-50px;
+
+    top:-50px;
+
+}
+
+
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+
+
+
+
+/*==================================================
+ICON
+==================================================*/
+
+
+.service-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:22px;
+
+    background:#EFF6FF;
+
+    color:var(--primary);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.8rem;
+
+    margin-bottom:30px;
+
+    transition:.4s ease;
+
+}
+
+
+
+.service-card:hover .service-icon{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:rotate(8deg);
+
+}
+
+
+
+
+
+/*==================================================
+TEXT
+==================================================*/
+
+
+.service-card h3{
+
+    font-size:1.4rem;
+
+    color:var(--dark);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.service-card p{
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.service-card a{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.service-card a:hover{
+
+    color:var(--gold);
+
+}
+
+/*==================================================
+SERVICE RESPONSIVE
+==================================================*/
+
+
+@media(max-width:1000px){
+
+
+    .service-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:650px){
+
+
+    .service-categories{
+
+        padding:80px 6%;
+
+    }
+
+
+    .services-header h2{
+
+        font-size:2.2rem;
+
+    }
+
+
+    .service-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .service-card{
+
+        padding:35px 25px;
+
+    }
+
+
+}
+
+/*==================================================
+SERVICE CARD ANIMATION
+==================================================*/
+
+
+.service-reveal{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s ease;
+
+}
+
+
+
+.service-reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*==================================================
+DETAILED SERVICES SECTION
+==================================================*/
+
+.detailed-services{
+
+    padding:120px 8%;
+
+    background:white;
+
+}
+
+
+
+.detail-service{
+
+    max-width:1200px;
+
+    margin:0 auto 120px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+
+
+.detail-service:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+
+
+
+/*==================================================
+REVERSE LAYOUT
+==================================================*/
+
+
+.detail-service.reverse .detail-content{
+
+    order:2;
+
+}
+
+
+
+.detail-service.reverse .detail-image{
+
+    order:1;
+
+}
+
+
+
+
+
+/*==================================================
+CONTENT
+==================================================*/
+
+
+.detail-content .section-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    background:#EFF6FF;
+
+    color:var(--primary);
+
+    border-radius:50px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.detail-content h2{
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+    color:var(--dark);
+
+    margin-bottom:25px;
+
+}
+
+
+
+.detail-content h2 span{
+
+    color:var(--gold);
+
+}
+
+
+
+.detail-content p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    font-size:1.05rem;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+/*==================================================
+SERVICE LIST
+==================================================*/
+
+
+.detail-content ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.detail-content ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+    color:var(--dark);
+
+    font-weight:600;
+
+}
+
+
+
+.detail-content ul i{
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:.8rem;
+
+}
+
+
+
+
+
+/*==================================================
+IMAGE
+==================================================*/
+
+
+.detail-image{
+
+    position:relative;
+
+}
+
+
+
+.detail-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    background:var(--gold);
+
+    opacity:.12;
+
+    border-radius:50%;
+
+    top:-50px;
+
+    right:-40px;
+
+}
+
+
+
+.detail-image img{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:40px;
+
+    position:relative;
+
+    z-index:1;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.15);
+
+    transition:.5s ease;
+
+}
+
+
+
+.detail-image:hover img{
+
+    transform:scale(1.03);
+
+}
+
+/*==================================================
+DETAILED SERVICES RESPONSIVE
+==================================================*/
+
+
+@media(max-width:950px){
+
+
+    .detail-service{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+        margin-bottom:90px;
+
+    }
+
+
+
+    .detail-service.reverse .detail-content{
+
+        order:1;
+
+    }
+
+
+
+    .detail-service.reverse .detail-image{
+
+        order:2;
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .detailed-services{
+
+        padding:80px 6%;
+
+    }
+
+
+    .detail-content h2{
+
+        font-size:2.2rem;
+
+    }
+
+
+    .detail-image img{
+
+        height:350px;
+
+        border-radius:25px;
+
+    }
+
+
+}
+
+/*==================================================
+DETAIL SERVICES ANIMATION
+==================================================*/
+
+
+.detail-reveal{
+
+    opacity:0;
+
+    transition:.9s ease;
+
+}
+
+
+
+.detail-content.detail-reveal{
+
+    transform:translateX(-60px);
+
+}
+
+
+
+.detail-image.detail-reveal{
+
+    transform:translateX(60px);
+
+}
+
+
+
+.detail-reveal.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/*==================================================
+WHY CHOOSE SECTION
+==================================================*/
+
+.why-section{
+
+    padding:120px 8%;
+
+    background:#F8FAFC;
+
+}
+
+
+
+/*==================================================
+HEADER
+==================================================*/
+
+
+.why-header{
+
+    max-width:750px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+
+
+.why-header .section-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    background:#EFF6FF;
+
+    color:var(--primary);
+
+    border-radius:50px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.why-header h2{
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+    color:var(--dark);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.why-header h2 span{
+
+    color:var(--gold);
+
+}
+
+
+
+.why-header p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    font-size:1.05rem;
+
+}
+
+
+
+
+
+/*==================================================
+WHY CARDS
+==================================================*/
+
+
+.why-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+.why-card{
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    transition:.5s ease;
+
+    border:1px solid rgba(0,0,0,.05);
+
+}
+
+
+
+.why-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+
+
+
+
+/*==================================================
+ICON
+==================================================*/
+
+
+.why-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 25px;
+
+    border-radius:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#EFF6FF;
+
+    color:var(--primary);
+
+    font-size:1.7rem;
+
+    transition:.4s ease;
+
+}
+
+
+
+.why-card:hover .why-icon{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:rotate(8deg);
+
+}
+
+
+
+
+
+/*==================================================
+TEXT
+==================================================*/
+
+
+.why-card h3{
+
+    font-size:1.25rem;
+
+    color:var(--dark);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.why-card p{
+
+    color:var(--text);
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+/*==================================================
+STATS
+==================================================*/
+
+
+.why-stats{
+
+    max-width:900px;
+
+    margin:80px auto 0;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    background:var(--primary);
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+}
+
+
+
+.why-stats div{
+
+    padding:40px;
+
+    text-align:center;
+
+    color:white;
+
+    border-right:1px solid rgba(255,255,255,.15);
+
+}
+
+
+
+.why-stats div:last-child{
+
+    border-right:none;
+
+}
+
+
+
+.why-stats strong{
+
+    display:block;
+
+    font-size:3rem;
+
+    color:var(--gold);
+
+    margin-bottom:10px;
+
+}
+
+
+
+.why-stats span{
+
+    font-size:1rem;
+
+    opacity:.9;
+
+}
+
+/*==================================================
+WHY RESPONSIVE
+==================================================*/
+
+
+@media(max-width:1050px){
+
+
+    .why-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:650px){
+
+
+    .why-section{
+
+        padding:80px 6%;
+
+    }
+
+
+    .why-header h2{
+
+        font-size:2.2rem;
+
+    }
+
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .why-stats{
+
+        grid-template-columns:1fr;
+
+        border-radius:25px;
+
+    }
+
+
+    .why-stats div{
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(255,255,255,.15);
+
+    }
+
+
+    .why-stats div:last-child{
+
+        border-bottom:none;
+
+    }
+
+
+}
+
+/*==================================================
+WHY CHOOSE ANIMATION
+==================================================*/
+
+
+.why-reveal{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s ease;
+
+}
+
+
+
+.why-reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

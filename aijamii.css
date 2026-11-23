@@ -1,0 +1,3590 @@
+/*==================================================
+AIJAMII SAFARI COLOR SYSTEM
+==================================================*/
+
+
+:root{
+
+
+    --ai-green:#0F766E;
+
+    --ai-blue:#2563EB;
+
+    --ai-gold:#F4B400;
+
+    --ai-dark:#052E2B;
+
+    --ai-light:#F0FDFA;
+
+    --ai-white:#FFFFFF;
+
+    --ai-text:#334155;
+
+
+}
+
+
+
+
+
+/*==================================================
+GLOBAL RESET
+==================================================*/
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    font-family:
+    "Inter", 
+    sans-serif;
+
+    color:var(--ai-text);
+
+    background:var(--ai-white);
+
+}
+
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+
+/*==================================================
+AIJAMII HEADER
+==================================================*/
+
+
+.ai-header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:20px 8%;
+
+
+}
+
+
+
+
+
+.ai-navbar{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    padding:15px 25px;
+
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:50px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+
+/*==================================================
+LOGO
+==================================================*/
+
+
+.ai-logo h2{
+
+
+    font-size:1.5rem;
+
+    font-weight:800;
+
+    color:var(--ai-dark);
+
+
+}
+
+
+
+.ai-logo h2 span{
+
+    color:var(--ai-green);
+
+}
+
+
+
+.ai-logo small{
+
+
+    display:block;
+
+    font-size:.75rem;
+
+    color:var(--ai-text);
+
+
+}
+
+
+
+
+
+/*==================================================
+NAV LINKS
+==================================================*/
+
+
+.ai-nav-links{
+
+
+    display:flex;
+
+    gap:40px;
+
+
+}
+
+
+
+.ai-nav-links a{
+
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    color:var(--ai-dark);
+
+    position:relative;
+
+    transition:.3s;
+
+
+}
+
+
+
+.ai-nav-links a::after{
+
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:2px;
+
+    bottom:-8px;
+
+    left:0;
+
+    background:var(--ai-green);
+
+    transition:.3s;
+
+
+}
+
+
+
+.ai-nav-links a:hover::after{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+/*==================================================
+JOIN BUTTON
+==================================================*/
+
+
+.ai-join-btn{
+
+
+    padding:13px 25px;
+
+    border-radius:50px;
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        var(--ai-green),
+
+        var(--ai-blue)
+
+    );
+
+
+    color:white;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.ai-join-btn:hover{
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 10px 25px rgba(15,118,110,.3);
+
+
+}
+
+
+
+
+
+/*==================================================
+MOBILE MENU BUTTON
+==================================================*/
+
+
+.ai-menu-btn{
+
+
+    display:none;
+
+    font-size:1.5rem;
+
+    color:var(--ai-dark);
+
+    cursor:pointer;
+
+
+}
+
+/*==================================================
+HEADER SCROLL EFFECT
+==================================================*/
+
+
+.ai-header.scrolled .ai-navbar{
+
+
+    background:white;
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.12);
+
+
+}
+
+/*==================================================
+AIJAMII HERO SECTION
+==================================================*/
+
+
+.ai-hero{
+
+    min-height:100vh;
+
+    padding:150px 8% 100px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #052E2B,
+
+        #0F766E,
+
+        #2563EB
+
+    );
+
+
+    display:flex;
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+/*==================================================
+BACKGROUND AI ORBS
+==================================================*/
+
+
+.ai-orb{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:.45;
+
+}
+
+
+
+.orb-one{
+
+    width:450px;
+
+    height:450px;
+
+    background:#F4B400;
+
+    top:-150px;
+
+    left:-150px;
+
+}
+
+
+
+
+
+.orb-two{
+
+    width:400px;
+
+    height:400px;
+
+    background:#38BDF8;
+
+    right:-120px;
+
+    bottom:-120px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+HERO CONTAINER
+==================================================*/
+
+
+.ai-hero-container{
+
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+
+    1fr 1fr;
+
+
+    gap:60px;
+
+    align-items:center;
+
+
+    position:relative;
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+
+
+/*==================================================
+HERO CONTENT
+==================================================*/
+
+
+.ai-tag{
+
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    color:white;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+
+    backdrop-filter:blur(10px);
+
+
+}
+
+
+
+
+
+
+.ai-hero-content h1{
+
+
+    font-size:4rem;
+
+    line-height:1.15;
+
+    color:white;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.ai-hero-content h1 span{
+
+
+    color:#F4B400;
+
+
+}
+
+
+
+
+
+
+
+.ai-hero-content p{
+
+
+    color:rgba(255,255,255,.85);
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    max-width:550px;
+
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+
+
+
+/*==================================================
+BUTTONS
+==================================================*/
+
+
+.ai-hero-buttons{
+
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+.ai-btn{
+
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+
+}
+
+
+
+.ai-btn.primary{
+
+
+    background:#F4B400;
+
+    color:#052E2B;
+
+
+}
+
+
+
+
+
+.ai-btn.secondary{
+
+
+    border:1px solid rgba(255,255,255,.5);
+
+    color:white;
+
+
+}
+
+
+
+
+
+.ai-btn:hover{
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+/*==================================================
+AI POINTS
+==================================================*/
+
+
+.ai-ai-points{
+
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:45px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+.ai-ai-points div{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+
+    color:white;
+
+    font-size:.9rem;
+
+
+}
+
+
+
+
+
+.ai-ai-points i{
+
+
+    color:#F4B400;
+
+}
+
+/*==================================================
+AI HERO IMAGE
+==================================================*/
+
+
+.ai-hero-image{
+
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+
+}
+
+
+
+
+
+.ai-hero-image img{
+
+
+    width:100%;
+
+    max-width:500px;
+
+    border-radius:40px;
+
+
+    position:relative;
+
+    z-index:2;
+
+
+    animation:
+
+    aiFloat 6s ease-in-out infinite;
+
+
+}
+
+
+
+
+
+.image-glow{
+
+
+    position:absolute;
+
+
+    width:350px;
+
+    height:350px;
+
+
+    background:#38BDF8;
+
+
+    filter:blur(80px);
+
+
+    border-radius:50%;
+
+
+}
+
+
+
+
+
+
+@keyframes aiFloat{
+
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+
+}
+
+/*==================================================
+FLOATING AI CARDS
+==================================================*/
+
+
+.ai-floating-card{
+
+
+    position:absolute;
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(15px);
+
+
+    padding:15px 20px;
+
+
+    border-radius:20px;
+
+
+    color:white;
+
+
+    z-index:3;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.2);
+
+
+}
+
+
+
+
+
+.ai-floating-card i{
+
+
+    color:#F4B400;
+
+
+}
+
+
+
+
+
+.card-one{
+
+
+    top:20%;
+
+    left:-20px;
+
+
+}
+
+
+
+
+
+.card-two{
+
+
+    bottom:20%;
+
+    right:-20px;
+
+
+}
+
+@media(max-width:950px){
+
+
+    .ai-hero-container{
+
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+
+    }
+
+
+
+    .ai-hero-content p{
+
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+
+    }
+
+
+
+    .ai-hero-buttons{
+
+
+        justify-content:center;
+
+
+    }
+
+
+
+    .ai-ai-points{
+
+
+        justify-content:center;
+
+
+    }
+
+
+
+    .ai-hero-content h1{
+
+
+        font-size:2.8rem;
+
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .ai-hero{
+
+
+        padding-top:130px;
+
+
+    }
+
+
+
+    .ai-floating-card{
+
+
+        display:none;
+
+
+    }
+
+
+
+}
+
+/*==================================================
+DISCOVER AIJAMII SAFARI
+==================================================*/
+
+
+.discover-section{
+
+
+    padding:120px 8%;
+
+
+    background:#F0FDFA;
+
+
+}
+
+
+
+
+.discover-container{
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:70px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+/*==================================================
+IMAGE SIDE
+==================================================*/
+
+
+.discover-image{
+
+
+    position:relative;
+
+
+}
+
+
+
+
+
+.discover-image img{
+
+
+    width:100%;
+
+
+    max-width:520px;
+
+
+    border-radius:40px;
+
+
+    object-fit:cover;
+
+
+    box-shadow:
+
+
+    0 25px 60px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+.discover-badge{
+
+
+    position:absolute;
+
+
+    bottom:30px;
+
+
+    right:20px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:12px;
+
+
+    padding:18px 25px;
+
+
+    background:white;
+
+
+    border-radius:50px;
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(0,0,0,.12);
+
+
+    color:var(--ai-green);
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+.discover-badge i{
+
+
+    font-size:1.3rem;
+
+
+    color:var(--ai-gold);
+
+
+}
+
+/*==================================================
+DISCOVER CONTENT
+==================================================*/
+
+
+.discover-content{
+
+
+    max-width:550px;
+
+
+}
+
+
+
+
+.discover-tag{
+
+
+    display:inline-block;
+
+
+    padding:10px 22px;
+
+
+    border-radius:50px;
+
+
+    background:#CCFBF1;
+
+
+    color:var(--ai-green);
+
+
+    font-weight:600;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+.discover-content h2{
+
+
+    font-size:3.2rem;
+
+
+    line-height:1.2;
+
+
+    color:var(--ai-dark);
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.discover-content h2 span{
+
+
+    color:var(--ai-blue);
+
+
+}
+
+
+
+
+
+.discover-content p{
+
+
+    line-height:1.8;
+
+
+    color:var(--ai-text);
+
+
+    margin-bottom:20px;
+
+
+}
+
+/*==================================================
+DISCOVER CARDS
+==================================================*/
+
+
+.discover-cards{
+
+
+    margin-top:35px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:18px;
+
+
+}
+
+
+
+
+.discover-card{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:20px;
+
+
+    padding:20px;
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+
+    0 10px 30px rgba(0,0,0,.06);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.discover-card:hover{
+
+
+    transform:translateX(10px);
+
+
+}
+
+
+
+
+
+.discover-card i{
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        var(--ai-green),
+
+        var(--ai-blue)
+
+    );
+
+
+    color:white;
+
+
+    font-size:1.2rem;
+
+
+}
+
+
+
+
+.discover-card h3{
+
+
+    color:var(--ai-dark);
+
+
+    margin-bottom:5px;
+
+
+}
+
+
+
+
+.discover-card p{
+
+
+    margin:0;
+
+
+    font-size:.9rem;
+
+
+}
+
+/*==================================================
+DISCOVER RESPONSIVE
+==================================================*/
+
+
+@media(max-width:950px){
+
+
+    .discover-container{
+
+
+        grid-template-columns:1fr;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+
+    .discover-image{
+
+
+        display:flex;
+
+
+        justify-content:center;
+
+
+    }
+
+
+
+
+
+    .discover-content{
+
+
+        margin:auto;
+
+
+    }
+
+
+
+
+    .discover-card{
+
+
+        text-align:left;
+
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .discover-content h2{
+
+
+        font-size:2.3rem;
+
+
+    }
+
+
+
+
+    .discover-badge{
+
+
+        position:relative;
+
+
+        right:auto;
+
+
+        bottom:auto;
+
+
+        margin-top:20px;
+
+
+        justify-content:center;
+
+
+    }
+
+
+}
+
+/*==================================================
+AIJAMII INITIATIVES SECTION
+==================================================*/
+
+
+.initiatives-section{
+
+
+    padding:120px 8%;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+.initiatives-header{
+
+
+    max-width:750px;
+
+
+    margin:0 auto 70px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.initiatives-tag{
+
+
+    display:inline-block;
+
+
+    padding:10px 22px;
+
+
+    border-radius:50px;
+
+
+    background:#CCFBF1;
+
+
+    color:var(--ai-green);
+
+
+    font-weight:600;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.initiatives-header h2{
+
+
+    font-size:3rem;
+
+
+    color:var(--ai-dark);
+
+
+    line-height:1.2;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.initiatives-header h2 span{
+
+
+    color:var(--ai-blue);
+
+
+}
+
+
+
+
+
+.initiatives-header p{
+
+
+    color:#475569;
+
+
+    line-height:1.8;
+
+
+    font-size:1.05rem;
+
+
+}
+
+/*==================================================
+INITIATIVES GRID
+==================================================*/
+
+
+.initiatives-grid{
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+
+.initiative-card{
+
+
+    padding:35px 30px;
+
+
+    border-radius:30px;
+
+
+    background:#F8FAFC;
+
+
+    border:1px solid rgba(15,118,110,.08);
+
+
+    transition:.4s ease;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.initiative-card::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:120px;
+
+
+    height:120px;
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        rgba(15,118,110,.15),
+
+        rgba(37,99,235,.15)
+
+    );
+
+
+    border-radius:50%;
+
+
+    top:-60px;
+
+
+    right:-60px;
+
+
+}
+
+
+
+
+
+
+.initiative-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+    box-shadow:
+
+
+    0 25px 50px rgba(0,0,0,.1);
+
+
+    background:white;
+
+
+}
+
+/*==================================================
+INITIATIVE ICONS
+==================================================*/
+
+
+.initiative-icon{
+
+
+    width:65px;
+
+
+    height:65px;
+
+
+    border-radius:20px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        var(--ai-green),
+
+        var(--ai-blue)
+
+    );
+
+
+    color:white;
+
+
+    font-size:1.5rem;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.initiative-card h3{
+
+
+    font-size:1.35rem;
+
+
+    color:var(--ai-dark);
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.initiative-card p{
+
+
+    color:#64748B;
+
+
+    line-height:1.7;
+
+
+    font-size:.95rem;
+
+
+    margin-bottom:25px;
+
+
+}
+
+/*==================================================
+INITIATIVE LINKS
+==================================================*/
+
+
+.initiative-card a{
+
+
+    color:var(--ai-green);
+
+
+    font-weight:600;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:8px;
+
+
+}
+
+
+
+
+
+.initiative-card a i{
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.initiative-card a:hover i{
+
+
+    transform:translateX(5px);
+
+
+}
+
+/*==================================================
+INITIATIVES RESPONSIVE
+==================================================*/
+
+
+@media(max-width:1100px){
+
+
+    .initiatives-grid{
+
+
+        grid-template-columns:repeat(2,1fr);
+
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+    .initiatives-header h2{
+
+
+        font-size:2.2rem;
+
+
+    }
+
+
+
+    .initiatives-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+}
+
+/*==================================================
+INITIATIVES REVEAL
+==================================================*/
+
+
+.initiative-reveal{
+
+
+    opacity:0;
+
+
+    transform:translateY(50px);
+
+
+    transition:.8s ease;
+
+
+}
+
+
+
+
+
+.initiative-reveal.show{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+/*==================================================
+AIJAMII COMMUNITY SECTION
+==================================================*/
+
+
+.community-section{
+
+
+    padding:120px 8%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #F0FDFA,
+
+        #FFFFFF
+
+    );
+
+
+}
+
+
+
+
+.community-container{
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+/*==================================================
+COMMUNITY HEADER
+==================================================*/
+
+
+.community-header{
+
+
+    max-width:750px;
+
+
+    margin:0 auto 80px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.community-tag{
+
+
+    display:inline-block;
+
+
+    padding:10px 22px;
+
+
+    border-radius:50px;
+
+
+    background:#CCFBF1;
+
+
+    color:var(--ai-green);
+
+
+    font-weight:600;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.community-header h2{
+
+
+    font-size:3rem;
+
+
+    line-height:1.2;
+
+
+    color:var(--ai-dark);
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.community-header h2 span{
+
+
+    color:var(--ai-blue);
+
+
+}
+
+
+
+
+
+.community-header p{
+
+
+    color:#475569;
+
+
+    line-height:1.8;
+
+
+}
+
+/*==================================================
+COMMUNITY NETWORK
+==================================================*/
+
+
+.community-network{
+
+
+    position:relative;
+
+
+    height:550px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+/* CENTER */
+
+
+.community-center{
+
+
+    width:180px;
+
+
+    height:180px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        var(--ai-green),
+
+        var(--ai-blue)
+
+    );
+
+
+    color:white;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+
+    0 20px 60px rgba(15,118,110,.35);
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+.community-center i{
+
+
+    font-size:2.5rem;
+
+
+    color:#F4B400;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+.community-center h3{
+
+
+    font-size:1.4rem;
+
+
+}
+
+
+
+
+
+.community-center span{
+
+
+    font-size:.85rem;
+
+
+}
+
+/*==================================================
+COMMUNITY ITEMS
+==================================================*/
+
+
+.community-item{
+
+
+    position:absolute;
+
+
+    width:190px;
+
+
+    padding:25px;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(0,0,0,.08);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+
+.community-item:hover{
+
+
+    transform:translateY(-10px);
+
+
+    box-shadow:
+
+
+    0 25px 50px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+.community-item i{
+
+
+    font-size:1.8rem;
+
+
+    color:var(--ai-green);
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.community-item h4{
+
+
+    color:var(--ai-dark);
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+
+.community-item p{
+
+
+    color:#64748B;
+
+
+    font-size:.9rem;
+
+
+}
+
+/*==================================================
+NETWORK POSITIONS
+==================================================*/
+
+
+.item-one{
+
+
+    top:30px;
+
+
+    left:15%;
+
+
+}
+
+
+
+
+
+.item-two{
+
+
+    top:30px;
+
+
+    right:15%;
+
+
+}
+
+
+
+
+
+.item-three{
+
+
+    bottom:30px;
+
+
+    left:20%;
+
+
+}
+
+
+
+
+
+.item-four{
+
+
+    bottom:30px;
+
+
+    right:20%;
+
+
+}
+
+/*==================================================
+COMMUNITY STATS
+==================================================*/
+
+
+.community-stats{
+
+
+    margin-top:80px;
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.community-stats div{
+
+
+    padding:30px;
+
+
+    background:#F8FAFC;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.community-stats strong{
+
+
+    display:block;
+
+
+    font-size:2.5rem;
+
+
+    color:var(--ai-blue);
+
+
+}
+
+
+
+
+
+.community-stats span{
+
+
+    color:#475569;
+
+
+}
+
+/*==================================================
+COMMUNITY RESPONSIVE
+==================================================*/
+
+
+@media(max-width:900px){
+
+
+    .community-network{
+
+
+        height:auto;
+
+
+        display:grid;
+
+
+        grid-template-columns:repeat(2,1fr);
+
+
+        gap:25px;
+
+
+    }
+
+
+
+    .community-center{
+
+
+        grid-column:1/-1;
+
+
+        margin:auto;
+
+
+    }
+
+
+
+
+    .community-item{
+
+
+        position:relative;
+
+
+        width:auto;
+
+
+        top:auto;
+
+        left:auto;
+
+        right:auto;
+
+        bottom:auto;
+
+
+    }
+
+
+
+    .community-stats{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .community-network{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+}
+
+/*==================================================
+COMMUNITY REVEAL
+==================================================*/
+
+
+.community-reveal{
+
+
+    opacity:0;
+
+
+    transform:scale(.8) translateY(30px);
+
+
+    transition:.8s ease;
+
+
+}
+
+
+
+
+
+.community-reveal.show{
+
+
+    opacity:1;
+
+
+    transform:scale(1) translateY(0);
+
+
+}
+
+/*==================================================
+AIJAMII JOIN MOVEMENT CTA
+==================================================*/
+
+
+.join-section{
+
+
+    padding:120px 8%;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #052E2B,
+
+        #0F766E,
+
+        #2563EB
+
+    );
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.join-container{
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    align-items:center;
+
+
+    gap:70px;
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+}
+
+/*==================================================
+JOIN CONTENT
+==================================================*/
+
+
+.join-tag{
+
+
+    display:inline-block;
+
+
+    padding:10px 22px;
+
+
+    border-radius:50px;
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(10px);
+
+
+    margin-bottom:25px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+.join-content h2{
+
+
+    font-size:3.5rem;
+
+
+    line-height:1.2;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.join-content h2 span{
+
+
+    color:#F4B400;
+
+
+}
+
+
+
+
+
+.join-content p{
+
+
+    color:rgba(255,255,255,.85);
+
+
+    line-height:1.8;
+
+
+    max-width:550px;
+
+
+    margin-bottom:40px;
+
+
+}
+
+/*==================================================
+JOIN BUTTONS
+==================================================*/
+
+
+.join-buttons{
+
+
+    display:flex;
+
+
+    gap:20px;
+
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+.join-btn{
+
+
+    padding:16px 35px;
+
+
+    border-radius:50px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.join-btn.primary{
+
+
+    background:#F4B400;
+
+
+    color:#052E2B;
+
+
+}
+
+
+
+
+.join-btn.secondary{
+
+
+    border:1px solid rgba(255,255,255,.5);
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.join-btn:hover{
+
+
+    transform:translateY(-5px);
+
+
+}
+
+/*==================================================
+AI JOIN VISUAL
+==================================================*/
+
+
+.join-visual{
+
+
+    height:400px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    position:relative;
+
+
+}
+
+
+
+
+
+.join-glow{
+
+
+    position:absolute;
+
+
+    width:280px;
+
+
+    height:280px;
+
+
+    background:#38BDF8;
+
+
+    border-radius:50%;
+
+
+    filter:blur(80px);
+
+
+}
+
+
+
+
+
+.ai-circle{
+
+
+    width:160px;
+
+
+    height:160px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+
+    rgba(255,255,255,.12);
+
+
+    backdrop-filter:blur(20px);
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:4rem;
+
+
+    color:#F4B400;
+
+
+    border:1px solid rgba(255,255,255,.3);
+
+
+    animation:pulseAI 3s infinite;
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+}
+
+/*==================================================
+AI NODES
+==================================================*/
+
+
+.join-node{
+
+
+    position:absolute;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    border-radius:50%;
+
+
+    background:white;
+
+
+    color:#0F766E;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:1.3rem;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.2);
+
+
+}
+
+
+
+
+
+.node-one{
+
+
+    top:50px;
+
+
+    left:90px;
+
+
+}
+
+
+
+
+
+.node-two{
+
+
+    right:80px;
+
+
+    top:120px;
+
+
+}
+
+
+
+
+
+.node-three{
+
+
+    bottom:70px;
+
+
+    left:130px;
+
+
+}
+
+/*==================================================
+AI PULSE
+==================================================*/
+
+
+@keyframes pulseAI{
+
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+
+}
+
+/*==================================================
+JOIN RESPONSIVE
+==================================================*/
+
+
+@media(max-width:900px){
+
+
+    .join-container{
+
+
+        grid-template-columns:1fr;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+    .join-content p{
+
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+
+    }
+
+
+
+    .join-buttons{
+
+
+        justify-content:center;
+
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .join-content h2{
+
+
+        font-size:2.4rem;
+
+
+    }
+
+
+
+    .join-visual{
+
+
+        height:300px;
+
+
+    }
+
+
+
+}
+
+/*==================================================
+AIJAMII SAFARI FOOTER
+==================================================*/
+
+
+.aijamii-footer{
+
+
+    padding:80px 8% 30px;
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #020617,
+
+        #052E2B
+
+    );
+
+
+    color:white;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.aijamii-footer::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:400px;
+
+
+    height:400px;
+
+
+    background:#0F766E;
+
+
+    opacity:.15;
+
+
+    filter:blur(100px);
+
+
+    top:-150px;
+
+
+    right:-100px;
+
+
+}
+
+/*==================================================
+FOOTER CONTAINER
+==================================================*/
+
+
+.footer-container{
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:2fr 1fr 1fr;
+
+
+    gap:60px;
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+}
+
+/*==================================================
+FOOTER BRAND
+==================================================*/
+
+
+.footer-brand h2{
+
+
+    font-size:2rem;
+
+
+    font-family:"Sora",sans-serif;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.footer-brand h2 span{
+
+
+    color:#F4B400;
+
+
+}
+
+
+
+
+
+.footer-brand p{
+
+
+    max-width:380px;
+
+
+    line-height:1.8;
+
+
+    color:rgba(255,255,255,.75);
+
+
+}
+
+/*==================================================
+FOOTER SOCIAL
+==================================================*/
+
+
+.footer-socials{
+
+
+    display:flex;
+
+
+    gap:15px;
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+
+
+.footer-socials a{
+
+
+    width:45px;
+
+
+    height:45px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:
+
+
+    rgba(255,255,255,.1);
+
+
+    color:white;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.footer-socials a:hover{
+
+
+    background:#F4B400;
+
+
+    color:#020617;
+
+
+    transform:translateY(-5px);
+
+
+}
+
+/*==================================================
+FOOTER LINKS
+==================================================*/
+
+
+.footer-links{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+.footer-links h3{
+
+
+    color:#F4B400;
+
+
+    margin-bottom:15px;
+
+
+    font-size:1.1rem;
+
+
+}
+
+
+
+
+
+.footer-links a{
+
+
+    color:rgba(255,255,255,.75);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.footer-links a:hover{
+
+
+    color:white;
+
+
+    transform:translateX(5px);
+
+
+}
+
+/*==================================================
+FOOTER BOTTOM
+==================================================*/
+
+
+.footer-bottom{
+
+
+    max-width:1200px;
+
+
+    margin:60px auto 0;
+
+
+    padding-top:25px;
+
+
+    border-top:
+
+
+    1px solid rgba(255,255,255,.15);
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.footer-bottom p{
+
+
+    color:rgba(255,255,255,.6);
+
+
+    font-size:.9rem;
+
+
+}
+
+/*==================================================
+FOOTER RESPONSIVE
+==================================================*/
+
+
+@media(max-width:850px){
+
+
+    .footer-container{
+
+
+        grid-template-columns:1fr;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+
+
+    .footer-brand p{
+
+
+        margin:auto;
+
+
+    }
+
+
+
+
+
+    .footer-socials{
+
+
+        justify-content:center;
+
+
+    }
+
+
+
+}
+
+/*==================================================
+FOOTER REVEAL
+==================================================*/
+
+
+.footer-reveal{
+
+
+    opacity:0;
+
+
+    transform:translateY(30px);
+
+
+    transition:.8s ease;
+
+
+}
+
+
+
+
+.footer-reveal.show{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+/*==================================================
+NEXTCHAPTER ECOSYSTEM LINK
+==================================================*/
+
+
+.ecosystem-link{
+
+
+    margin-top:20px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:8px;
+
+
+    color:rgba(255,255,255,.65);
+
+
+    font-size:.9rem;
+
+
+}
+
+
+
+
+
+.ecosystem-link a{
+
+
+    color:#F4B400;
+
+
+    font-weight:600;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:8px;
+
+
+}
+
+
+
+
+
+.ecosystem-link a i{
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.ecosystem-link a:hover i{
+
+
+    transform:translateX(5px);
+
+
+}
