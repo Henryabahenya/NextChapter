@@ -30,7 +30,7 @@ if (!parsed.success) {
       .map((issue) => `${issue.path.join(".")}: ${issue.message}`)
       .join("; "),
   );
-  process.exit(1);
+  throw new Error("Invalid environment configuration");
 }
 
 export const env = parsed.data;
